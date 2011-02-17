@@ -1,0 +1,113 @@
+body {
+	background-color:#fcfcfc;
+	color:#222;
+}
+a, a:visited {
+	color:#226;
+}
+
+
+#header {
+	overflow:auto;
+	background-color:#222;
+	border-bottom:1px solid #000;
+	
+	h1 {
+		padding:0px;
+		margin:0px 10px 5px;
+		float:left;
+
+		a {
+			font-size:36px;
+			color:#fff;
+			font-weight:bold;
+			background:none;
+			border:none;
+			text-shadow:0px 1px 0px #777, 0px -1px 0px #333;
+			text-decoration:none;
+			-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.3)));	
+		}
+	}
+	
+	#nav {
+		float:left;
+		margin:0px;padding:0px;
+		li {
+			margin:12px 0px 0px 20px;
+			display:inline-block;
+			
+			a {
+				color:#aaa;
+				padding:1px 4px;
+				border-radius:7px;
+				font-weight:bold;
+				text-shadow:0px -1px 0px #000;
+				background-color:#226;
+				text-decoration:none;
+				border:1px solid #337;
+				display:inline-block;
+			}
+			a:hover {
+				color:#fff;
+				border:1px solid #448;
+			}
+
+		}
+	}
+	
+	#user {
+		margin:5px;
+		float:right;
+		
+		a {
+			color:#fff;
+		}
+
+	}
+
+}
+
+div.post {
+	margin:5px;
+	padding:5px;
+	border-bottom:1px solid #ccc;
+	
+	.upvote {
+		display:block;
+		float:left;
+		width:50px;
+		height:50px;
+		text-indent:-50000px;
+		background: url('/images/up_caret.gif') top left no-repeat;
+	}
+	.upvote:hover {
+		background-color:#cfc;
+	}
+	span.score {
+		float:left;
+		font-size:10px;
+		background-color:#f90;
+		padding:1px 3px;
+		border-radius:5px;
+	}
+	.title {
+		font-size:32px;
+	}
+	.submission-info {
+		clear:left;
+		display:block;
+		margin-left:60px;
+	}
+	.comments {
+		margin-left:60px;
+	}
+}
+
+
+
+// Individual forms
+#new_post {
+	width:640px;
+	margin:0px auto;
+	margin-top:20px;
+}

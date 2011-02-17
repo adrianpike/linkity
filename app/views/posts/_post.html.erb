@@ -1,0 +1,10 @@
+<div class="post" id="<%=dom_id(post)%>">
+	<%=link_to 'Vote Up', post_vote_path(post), :method => 'post', :class => 'upvote' %>
+	<span class="score"><%=post.display_score%></span>
+	
+	<strong class="title"><%=link_to (post.name? ? post.name : post.url), post.url %></strong>
+	<span class="url">(<%=post.url%>)</span>
+	
+	<em class='submission-info'>Submitted by <%=link_to post.user.to_s, user_path(post.user)%> about <%=time_ago_in_words(post.created_at)%> ago</em>
+	<span class="comments"><%=link_to post.comments.count.to_s+' comments', post_path(post)%></span>
+</div>

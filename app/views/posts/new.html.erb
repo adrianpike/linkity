@@ -1,0 +1,14 @@
+<%=semantic_form_for @post do |f| %>
+	
+	<%= f.inputs do %>
+    	
+		<%=f.input :url %>
+		<%=f.input :name %>
+
+	<% end %>
+
+    <% f.buttons do %>
+      <%= f.commit_button %>
+    <% end %>
+
+<% end %>

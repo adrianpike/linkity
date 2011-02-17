@@ -1,0 +1,6 @@
+<div class="comment" id="<%=dom_id(comment)%>">
+<strong><%=comment.user.to_s%></strong> says: <%=comment.comment%>
+
+<%= render :partial => '/comments/comment', :collection => comment.comments # HOLY SHIT RECURSION SON BOOM 
+%>
+</div>

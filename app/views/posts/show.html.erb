@@ -1,0 +1,7 @@
+<h2><%=link_to @post.name, @post.url%></h2>
+<h3><%=@post.url%></h3>
+
+<div id="description"><%=@post.description%></div>
+
+<%=render :partial => '/comments/comment', :collection => @post.comments %>
+<%=render :partial => '/comments/form' %>
