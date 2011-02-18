@@ -33,7 +33,7 @@ module Linkity
     # JavaScript files you want as :defaults (application.js is always included).
     # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
 
-    config.action_mailer.default_url_options = {:host => 'localhost:3000'}
+    config.action_mailer.default_url_options = {:host => 'bignews.heroku.com'}
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
