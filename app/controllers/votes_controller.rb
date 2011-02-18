@@ -18,6 +18,8 @@ class VotesController < ApplicationController
     else
       respond_to do |format|
         format.html {
+          flash[:notice] = I18n.t('vote.not_created')
+          redirect_to posts_path
         }
         format.js {}
       end

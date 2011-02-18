@@ -8,6 +8,7 @@ en:
       new_post: 'Submit new'
   vote:
       created: 'Your vote has been placed!'
+      not_created: 'You have already placed a vote on that post.'
   post:
       created: 'Your post has been accepted.'
   comment:

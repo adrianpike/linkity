@@ -67,6 +67,11 @@ a, a:visited {
 
 }
 
+#footer {
+	font-size:10px;
+	text-align:center;
+}
+
 div.post {
 	margin:5px;
 	padding:5px;
@@ -76,12 +81,15 @@ div.post {
 		display:block;
 		float:left;
 		padding:1px 4px;
-		margin:10px;
+		margin:20px 0px;
+		width:40px;
+		text-align:center;
 		color:#ddd;
 		text-decoration:none;
 		background-color:#aaa;
 		border:1px solid #999;
 		border-radius:5px;
+		font-size:10px;
 	}
 	.upvote:hover {
 		background-color:#bbb;
@@ -96,7 +104,13 @@ div.post {
 		border-radius:5px;
 	}
 	.title {
+		display:block;
 		font-size:32px;
+		margin-left:60px;
+	}
+	.url {
+		margin-left:60px;
+		display:block;
 	}
 	.submission-info {
 		clear:left;
@@ -108,11 +122,25 @@ div.post {
 	}
 }
 
-
+form {
+	ol {
+		li {
+			label {
+				text-align:right;
+			}
+		}
+	}
+}
 
 // Individual forms
 #new_post {
 	width:640px;
 	margin:0px auto;
 	margin-top:20px;
+}
+
+#new_comment {
+	textarea {
+		height:50px;
+	}
 }

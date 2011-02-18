@@ -8,8 +8,8 @@ class Post < ActiveRecord::Base
   validates_presence_of :user
   validates_format_of :url, :with => /(^$)|(^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$)/ix
   
-  def self.top(opts = {})
-    self.all(:limit => 100).sort{|a,b|
+  def self.top(opts = {:limit => 100})
+    self.all(:limit => opts[:limit]).sort{|a,b|
       b.score <=> a.score
     }
   end

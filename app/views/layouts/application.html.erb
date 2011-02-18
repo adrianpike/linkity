@@ -2,7 +2,7 @@
 <html>
 <head>
   <title><%=I18n.t('site.name')%></title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag 'application','formtastic','reset' %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
@@ -30,7 +30,13 @@
 	<%=flash[:info]%>
 </div>
 
+<div id="content">
 <%= yield %>
+</div>
+
+<div id="footer">
+	<%=I18n.t('site.name')%> is powered by <%=link_to 'linkity', 'http://github.com/adrianpike/linkity' %>.
+</div>
 
 </body>
 </html>
