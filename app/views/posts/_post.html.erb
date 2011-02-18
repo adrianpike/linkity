@@ -1,6 +1,6 @@
 <div class="post" id="<%=dom_id(post)%>">
-	<%=link_to 'Vote Up', post_vote_path(post), :method => 'post', :class => 'upvote' %>
-	<span class="score"><%=post.display_score%></span>
+	<%=link_to 'Vote', post_vote_path(post), :method => 'post', :class => 'upvote' %>
+	<span class="score"><%=post.display_score%> votes</span>
 	
 	<strong class="title"><%=link_to (post.name? ? post.name : post.url), post.url %></strong>
 	<span class="url">(<%=post.url%>)</span>

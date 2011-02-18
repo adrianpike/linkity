@@ -4,9 +4,9 @@ a,a:visited{color:#226;}
 #header #nav{float:left;margin:0px;padding:0px;}#header #nav li{margin:12px 0px 0px 20px;display:inline-block;}#header #nav li a{color:#aaa;padding:1px 4px;border-radius:7px;font-weight:bold;text-shadow:0px -1px 0px #000000;background-color:#226;text-decoration:none;border:1px solid #337;display:inline-block;}
 #header #nav li a:hover{color:#fff;border:1px solid #448;}
 #header #user{margin:5px;float:right;}#header #user a{color:#fff;}
-div.post{margin:5px;padding:5px;border-bottom:1px solid #ccc;}div.post .upvote{display:block;float:left;width:50px;height:50px;text-indent:-50000px;background:url('/images/up_caret.gif') top left no-repeat;}
-div.post .upvote:hover{background-color:#cfc;}
-div.post span.score{float:left;font-size:10px;background-color:#f90;padding:1px 3px;border-radius:5px;}
+div.post{margin:5px;padding:5px;border-bottom:1px solid #ccc;}div.post .upvote{display:block;float:left;padding:1px 4px;margin:10px;color:#ddd;text-decoration:none;background-color:#aaa;border:1px solid #999;border-radius:5px;}
+div.post .upvote:hover{background-color:#bbb;color:#fff;text-shadow:0px -1px 0px #999999;}
+div.post span.score{float:right;font-size:10px;background-color:#f90;padding:1px 3px;border-radius:5px;}
 div.post .title{font-size:32px;}
 div.post .submission-info{clear:left;display:block;margin-left:60px;}
 div.post .comments{margin-left:60px;}
