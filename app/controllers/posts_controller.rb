@@ -6,7 +6,6 @@ class PostsController < ApplicationController
   end
   
   def newest
-#    @posts = 
     render :index
   end
   

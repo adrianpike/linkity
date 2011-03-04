@@ -4,6 +4,7 @@ Linkity is link sharing lite, heavily inspired by Hacker News.
 
 === TODO
 
+FB Connect (https://github.com/jerryluk/devise_oauth2_authenticatable)
 User names
 Moderation
 Nested comments
